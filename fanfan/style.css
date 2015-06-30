@@ -1,0 +1,386 @@
+/*
+
+Theme Name:fanfan
+Theme URL: http://fanfan.zz.mu
+Description: 自己的博客主题
+Author: fanfan
+Author URI: fanfan.zz.mu
+Version: 1.0.0
+Tags: Red, White, right-sidebar, fixed-width, theme-options, threaded-comments, banner ads, adsense,fab themes.
+
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #6699cc;
+	font-family: cursive;
+}
+a{
+	text-decoration: none;
+}
+/*头像和联系方式*/
+.contact{
+	position: absolute;
+	right: 15%;
+}
+.contact>a{
+	transition: 0.5s;
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2em;
+	padding-left: 0.5em;
+}
+.contact>a:hover{
+	background-color: white;
+
+}
+.contact img{
+	height:2em;
+	width:2em;
+	border:0;
+}
+#avt{
+	border-radius: 50%;
+	width: 5em;
+	transition: 0.5s transform ease-out;
+}
+#avt:hover{
+	transform: rotate(-15deg) scale(1.1);
+}
+/* header.php //////////////////////////////////////////////////////////////////*/
+header{
+	padding: 0.5em 0;
+	margin-top: 2em;
+	background-color: #cccccc;
+	height:2em;
+	box-shadow: rgb(0, 0, 0) 0 0 45px;
+	opacity: 0;
+	-webkit-animation:0.5s 0.3s hidd linear  forwards normal ;
+	animation:0.5s 0.3s hidd linear  forwards normal ;
+}
+.topbar{
+	margin: 0 auto;
+	width:80%;
+}
+.myinfo,
+.myinfo>*,
+.contact,
+.contact>*{
+	display: inline-block;
+}
+.myinfo{
+	position:absolute;
+	left: 15%;
+	top:1em;
+}
+
+.myinfo>h3{
+	color: rgb(39, 67, 93);
+	position: relative;
+	top:-1.5em;
+	margin-left: 0.5em;
+}
+
+
+/*index.php //////////////////////////////////////////////////////////////////*/
+
+
+.categ{
+	color: white;
+	border-radius: 50%;
+	width: 1.385em;
+	text-align: center;	
+	font-size: 6em;
+	cursor: pointer;
+	text-shadow: black 3px 2px 3px;
+	box-shadow: black 2px 2px 5px;
+	transition:0.5s;
+	opacity: 0;
+}
+.categ:hover{
+	color:black;
+	background-color: #cccccc;
+}
+.lh{
+	text-align: center;
+
+}
+.lh>*{
+	display: inline-block;
+}
+
+.c1{
+	-webkit-animation:1.5s 0.5s rotateC linear  forwards normal ;
+	animation:1.5s 0.5s rotateC linear  forwards normal ;
+	background-color: #99cccc;
+	margin: 0.5em auto 0 auto;
+}
+.c2{
+	-webkit-animation:1.5s 0.5s rollL linear  forwards normal;
+	animation:1.5s 0.5s rollL linear  forwards normal;
+	background-color: #c3bb66;
+	margin: 0.5em 1.576em 0 auto;
+}
+.c3{
+	-webkit-animation:1.5s 0.5s rollH linear  forwards normal;
+	animation:1.5s 0.5s rollH linear  forwards normal;
+	background-color: #cc6666;
+	margin: 0.5em auto 0 1.576em;
+}
+.lh>h2{
+	margin: 0.5em auto 2em 0.875em;
+}
+
+.lh>h2:first-child{
+	margin: 0.5em 0.875em 0 auto;
+}
+.indexinfo>h2{
+	text-align: center;
+	margin-top: 0.5em;
+}
+.indexinfo>h2,.lh>h2{
+	opacity: 0;
+	-webkit-animation:1.5s 2s hidd linear  forwards normal ;
+	animation:1.5s 2s hidd linear  forwards normal ;
+}
+@keyframes rollL{
+	0%{
+		opacity:0;
+		transform: translateX(-4.5em);
+	}
+	
+	25%{
+		transform:translateX(-2.5em) rotate(180deg);
+	}
+	50%{
+		transform:translateX(-0.5em) rotate(360deg);
+	}	
+	74%{ 
+		width:1.385em;
+	}
+	75%{
+		transform:translateX(1.5em) rotate(540deg);
+		width: 0.5em;
+	}
+	100%{
+		transform:translateX(0) rotate(360deg);
+		opacity: 1;
+	}		
+}
+
+@-webkit-keyframes rollL{
+	0%{
+		opacity:0;
+		transform: translateX(-4.5em);
+	}
+	
+	25%{
+		transform:translateX(-2.5em) rotate(180deg);
+	}
+	50%{
+		transform:translateX(-0.5em) rotate(360deg);
+	}	
+	74%{ 
+		width:1.385em;
+	}
+	75%{
+		transform:translateX(1.5em) rotate(540deg);
+		width: 0.5em;
+	}
+	100%{
+		transform:translateX(0) rotate(360deg);
+		opacity: 1;
+	}	
+}
+@keyframes rollH{
+	0%{
+		transform: translateX(4.5em);
+		opacity: 0;
+	}
+
+	25%{
+		transform:translateX(2.5em) rotate(-180deg);
+	}
+	50%{
+		transform:translateX(0.5em) rotate(-360deg);
+	}
+	74%{ 
+		width:1.385em;
+	}	
+	75%{
+		transform:translateX(-1.5em) rotate(-540deg);
+		width: 0.5em;
+	}
+	100%{
+		transform:translateX(0) rotate(-360deg);
+		opacity: 1;
+	}	
+}
+@-webkit-keyframes rollH{
+	0%{
+		transform: translateX(4.5em);
+		opacity: 0;
+	}
+
+	25%{
+		transform:translateX(2.5em) rotate(-180deg);
+	}
+	50%{
+		transform:translateX(0.5em) rotate(-360deg);
+	}
+	74%{ 
+		width:1.385em;
+	}	
+	75%{
+		transform:translateX(-1.5em) rotate(-540deg);
+		width: 0.5em;
+	}
+	100%{
+		transform:translateX(0) rotate(-360deg);
+		opacity: 1;
+	}	
+}
+@keyframes rotateC{	
+	to{
+		transform:rotate(360deg);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes rotateC{	
+	to{
+		transform:rotate(360deg);
+		opacity: 1;
+	}
+}
+
+@keyframes hidd{
+	to{
+		 opacity: 1;
+	}
+}
+@-webkit-keyframes hidd{
+	to{
+		 opacity: 1;
+	}
+}
+/*footer.php //////////////////////////////////////////////////////////////////*/
+#mainfooter{
+	border-top: 1px solid rgb(105, 177, 35);
+	background-color: rgb(45, 110, 176);
+	bottom: 0;
+	width: 100%;
+	position:fixed;
+	line-height: 2.15em;
+	text-align: center;
+
+}
+#mainfooter a{
+	color: rgb(3, 49, 85);
+	text-decoration: none;
+}
+#mainfooter a:hover{
+	color: white;
+}
+/*code.php //////////////////////////////////////////////////////////////////*/
+
+.categIn{
+	position: fixed;
+	background-color: #6699cc;
+	height: 70em;
+	width: 18em;
+}
+
+.myinfo2{
+	text-align: center;
+	padding-top: 2em;
+}
+
+.categIn>ul>li{
+	width: 10em;
+	margin: 2em auto;
+	text-align: center;
+	list-style-type: none;
+	line-height: 2em;
+	background-color: #ffff99;
+	border-radius: 5px;
+	transition: 0.5s transform ease-out;
+}
+.categIn>ul>li:hover{
+	transform: translateX(2em)
+}
+.categIn>ul>li:first-child{
+	background-color: #99cccc;
+}
+.categIn>ul>li:last-child{
+	background-color: #cc6666;
+}
+ul a{
+	display:block;
+	color:black;
+	text-decoration: none;
+}
+.contact2{
+	position: relative;
+	left: 4em;
+}
+
+/*category.php//////// single.php/////////////////*/
+/*posts*/
+.posts{
+	box-shadow: aliceblue 1px 2px 15px;
+	margin-top:1em;
+	width: 500px;
+	text-align: center;
+	display: inline-block;
+	transform: translateX(30em);
+	padding: 1.5em 2em 1em 2em;
+	background-color: rgb(211, 183, 183);
+	border-radius: 10px;
+}
+
+.posts>h2{
+	margin-bottom: 0.5em;
+}
+.ifo{
+	padding: 0.25em;
+	text-align: left;
+	background-color: rgb(221, 221, 239);
+	border: 1px solid rgb(229, 206, 206);
+}
+.ifo>*{
+	margin: 0 0 0 0.5em;
+}
+.ifo>a{
+	padding: 0 0.5em;
+	color:black;
+}
+.posts>p{
+	background-color: white;
+	text-align: left;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+.posts>a{
+	float: right;
+	background-color: #FFFFFF;
+	color: rgb(65, 46, 46);
+	border-radius: 5px;
+	width: 5em;
+}
+ul a:hover,.ifo>a:hover,.posts>a:hover{
+	background: rgb(226, 200, 206);
+	border-radius: 5px;
+}
+#previous{
+	float: left;
+}
+/*single页的post*/
+.posts2{
+	display: block;
+	margin: 2em auto;
+	transform:translateX(0);
+	width: 720px;
+	padding-bottom: 2em;
+}
