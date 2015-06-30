@@ -13,11 +13,13 @@
         		<div class="ifo">
         			<span><?php the_date('y年m月d日'); ?></span>
         			<?php the_category(',')?>
-        	</div>
+        		</div>
 			
 				<?php the_content();?>
+				<div id="tbu">
 				<?php previous_post_link('%link','上一篇', $in_same_cat = true, $excluded_categories = ''); ?>
 				<?php next_post_link('%link','下一篇', $in_same_cat = true, $excluded_categories = ''); ?>
+				</div>
 		</div>
 
 		<?php
@@ -28,7 +30,7 @@
 			
 
 <script type="text/javascript">
-var prev=document.querySelector(".posts2").querySelectorAll("a")[1];
+var prev=document.querySelector("#tbu").querySelector("a");
 	prev.style.float="left";
 	
 

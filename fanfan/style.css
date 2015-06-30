@@ -362,7 +362,7 @@ ul a{
 	margin-bottom: 1em;
 	padding: 1em;
 }
-.posts>a{
+.posts>a,#tbu>a{
 	float: right;
 	background-color: #FFFFFF;
 	color: rgb(65, 46, 46);
