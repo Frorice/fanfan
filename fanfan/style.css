@@ -14,7 +14,7 @@ Tags: Red, White, right-sidebar, fixed-width, theme-options, threaded-comments, 
 	padding: 0;
 }
 body{
-	background-color: #6699cc;
+	background-color:  #f2f2f2;;
 	font-family: cursive;
 }
 a{
@@ -52,13 +52,9 @@ a{
 /* header.php //////////////////////////////////////////////////////////////////*/
 header{
 	padding: 0.5em 0;
-	margin-top: 2em;
-	background-color: #cccccc;
+	background-color: #D6E2Ee;
 	height:2em;
-	box-shadow: rgb(0, 0, 0) 0 0 45px;
-	opacity: 0;
-	-webkit-animation:0.5s 0.3s hidd linear  forwards normal ;
-	animation:0.5s 0.3s hidd linear  forwards normal ;
+
 }
 .topbar{
 	margin: 0 auto;
@@ -71,16 +67,16 @@ header{
 	display: inline-block;
 }
 .myinfo{
-	position:absolute;
-	left: 15%;
-	top:1em;
+	position: absolute;
+  left: 10%;
+  top: 0;
 }
 
 .myinfo>h3{
-	color: rgb(39, 67, 93);
-	position: relative;
-	top:-1.5em;
-	margin-left: 0.5em;
+  color: rgb(39, 67, 93);
+  position: relative;
+  top: -2.75em;
+  margin-left: 0.5em;
 }
 
 
@@ -96,179 +92,47 @@ header{
 	cursor: pointer;
 	text-shadow: black 3px 2px 3px;
 	box-shadow: black 2px 2px 5px;
-	transition:0.5s;
-	opacity: 0;
 }
 .categ:hover{
 	color:black;
-	background-color: #cccccc;
+	background-color: #f2f2f2;
 }
-.lh{
-	text-align: center;
-
+.indexinfo{
+	width: 795px;
+  margin: 5em auto;
 }
-.lh>*{
-	display: inline-block;
+.index-code,.index-life,.index-hobbies{
+  display: inline-block;
+  background-color: #D6E2Ee;
+  width: 235px;
+  margin: 0px 10px;
+  border-radius: 15px;
+  height: 330px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px #99cccc;
 }
-
-.c1{
-	-webkit-animation:1.5s 0.5s rotateC linear  forwards normal ;
-	animation:1.5s 0.5s rotateC linear  forwards normal ;
-	background-color: #99cccc;
+.c1,.c2,.c3{
 	margin: 0.5em auto 0 auto;
 }
+.c1{
+	background-color: #99cccc;
+}
 .c2{
-	-webkit-animation:1.5s 0.5s rollL linear  forwards normal;
-	animation:1.5s 0.5s rollL linear  forwards normal;
-	background-color: #c3bb66;
-	margin: 0.5em 1.576em 0 auto;
+	background-color: #ECEC8E;
 }
 .c3{
-	-webkit-animation:1.5s 0.5s rollH linear  forwards normal;
-	animation:1.5s 0.5s rollH linear  forwards normal;
 	background-color: #cc6666;
-	margin: 0.5em auto 0 1.576em;
-}
-.lh>h2{
-	margin: 0.5em auto 2em 0.875em;
 }
 
-.lh>h2:first-child{
-	margin: 0.5em 0.875em 0 auto;
-}
-.indexinfo>h2{
+.indexinfo h2{
 	text-align: center;
 	margin-top: 0.5em;
 }
-.indexinfo>h2,.lh>h2{
-	opacity: 0;
-	-webkit-animation:1.5s 2s hidd linear  forwards normal ;
-	animation:1.5s 2s hidd linear  forwards normal ;
-}
-@keyframes rollL{
-	0%{
-		opacity:0;
-		transform: translateX(-4.5em);
-	}
-	
-	25%{
-		transform:translateX(-2.5em) rotate(180deg);
-	}
-	50%{
-		transform:translateX(-0.5em) rotate(360deg);
-	}	
-	74%{ 
-		width:1.385em;
-	}
-	75%{
-		transform:translateX(1.5em) rotate(540deg);
-		width: 0.5em;
-	}
-	100%{
-		transform:translateX(0) rotate(360deg);
-		opacity: 1;
-	}		
-}
 
-@-webkit-keyframes rollL{
-	0%{
-		opacity:0;
-		transform: translateX(-4.5em);
-	}
-	
-	25%{
-		transform:translateX(-2.5em) rotate(180deg);
-	}
-	50%{
-		transform:translateX(-0.5em) rotate(360deg);
-	}	
-	74%{ 
-		width:1.385em;
-	}
-	75%{
-		transform:translateX(1.5em) rotate(540deg);
-		width: 0.5em;
-	}
-	100%{
-		transform:translateX(0) rotate(360deg);
-		opacity: 1;
-	}	
-}
-@keyframes rollH{
-	0%{
-		transform: translateX(4.5em);
-		opacity: 0;
-	}
 
-	25%{
-		transform:translateX(2.5em) rotate(-180deg);
-	}
-	50%{
-		transform:translateX(0.5em) rotate(-360deg);
-	}
-	74%{ 
-		width:1.385em;
-	}	
-	75%{
-		transform:translateX(-1.5em) rotate(-540deg);
-		width: 0.5em;
-	}
-	100%{
-		transform:translateX(0) rotate(-360deg);
-		opacity: 1;
-	}	
-}
-@-webkit-keyframes rollH{
-	0%{
-		transform: translateX(4.5em);
-		opacity: 0;
-	}
-
-	25%{
-		transform:translateX(2.5em) rotate(-180deg);
-	}
-	50%{
-		transform:translateX(0.5em) rotate(-360deg);
-	}
-	74%{ 
-		width:1.385em;
-	}	
-	75%{
-		transform:translateX(-1.5em) rotate(-540deg);
-		width: 0.5em;
-	}
-	100%{
-		transform:translateX(0) rotate(-360deg);
-		opacity: 1;
-	}	
-}
-@keyframes rotateC{	
-	to{
-		transform:rotate(360deg);
-		opacity: 1;
-	}
-}
-@-webkit-keyframes rotateC{	
-	to{
-		transform:rotate(360deg);
-		opacity: 1;
-	}
-}
-
-@keyframes hidd{
-	to{
-		 opacity: 1;
-	}
-}
-@-webkit-keyframes hidd{
-	to{
-		 opacity: 1;
-	}
-}
 /*footer.php //////////////////////////////////////////////////////////////////*/
 #mainfooter{
-	border-top: 1px solid rgb(105, 177, 35);
-	background-color: rgb(45, 110, 176);
+	background-color:#D6E2Ee;
 	bottom: 0;
 	width: 100%;
 	position:fixed;
@@ -279,17 +143,21 @@ header{
 #mainfooter a{
 	color: rgb(3, 49, 85);
 	text-decoration: none;
-}
+}	
 #mainfooter a:hover{
-	color: white;
+	color: red;
 }
 /*code.php //////////////////////////////////////////////////////////////////*/
 
+
 .categIn{
 	position: fixed;
-	background-color: #6699cc;
+	background-color: #D6E2Ee;
+	top:0;
+	bottom:0;
 	height: 70em;
 	width: 18em;
+	transition: margin-left 1s cubic-bezier(0.39, 0.01, 0.24, 0.99);
 }
 
 .myinfo2{
@@ -329,19 +197,18 @@ ul a{
 /*category.php//////// single.php/////////////////*/
 /*posts*/
 .posts{
-	box-shadow: aliceblue 1px 2px 15px;
-	margin-top:1em;
-	width: 500px;
-	text-align: center;
-	display: inline-block;
-	transform: translateX(30em);
-	padding: 1.5em 2em 1em 2em;
-	background-color: rgb(211, 183, 183);
-	border-radius: 10px;
+	margin: 1em auto;
+  width: 520px;
+  text-align: center;
+  padding: 1.5em 2em 1em 2em;
+  background-color: #336699;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .posts>h2{
 	margin-bottom: 0.5em;
+	color: white;
 }
 .ifo{
 	padding: 0.25em;
@@ -361,17 +228,20 @@ ul a{
 	text-align: left;
 	margin-bottom: 1em;
 	padding: 1em;
+	-webkit-margin-after: 0em;
 }
 .posts>a,#tbu>a{
 	float: right;
+	margin-top: 1em;
 	background-color: #FFFFFF;
 	color: rgb(65, 46, 46);
 	border-radius: 5px;
 	width: 5em;
 }
-ul a:hover,.ifo>a:hover,.posts>a:hover{
+ul a:hover,.ifo>a:hover,.posts>a:hover,#tbu>a:hover{
 	background: rgb(226, 200, 206);
 	border-radius: 5px;
+	color: white;
 }
 #previous{
 	float: left;
@@ -379,8 +249,66 @@ ul a:hover,.ifo>a:hover,.posts>a:hover{
 /*single页的post*/
 .posts2{
 	display: block;
-	margin: 2em auto;
+	margin: 3em auto;
 	transform:translateX(0);
 	width: 720px;
-	padding-bottom: 2em;
+}
+.in{
+	display: none;
+	width:60px;
+	background-color:#99CCCC;
+	height:60px;
+	border-radius: 50% ;
+	right: 10px;
+	bottom: 10px;
+	position:fixed;
+	box-shadow: 0px 6px 0px #499292;
+	transition: all 0.2s ease-out;
+}
+
+#tbu{
+	margin-top:1em;
+}
+.posts pre{
+	background:white;
+	text-align:left;
+	font-family:cursive;
+}
+
+
+
+@media (max-width: 960px) {
+	.in:active{
+	bottom:7px;
+	box-shadow: 0px 3px 0px #499292;
+}
+	.posts{
+		width:80%;
+		display: block;
+		margin:1em auto;
+	}
+	/*suo*/
+	.in{
+		display: block;
+
+	}
+	#catIn:target{
+		margin-left: -288px;
+
+	}
+	#catOut:target{
+		margin-left:0;
+	}
+	.topbar>.contact{
+	      display:none;
+	}
+	.indexinfo{
+		width: 255px;
+	}
+	.posts2{
+		word-wrap: break-word;
+	}
+	#mainfooter{
+		position:relative;
+	}
 }

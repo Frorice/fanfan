@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen" />
     </head>
     <?php flush(); ?>
-    <body style="background-color:#ccccff">
+    <body>
     	<div class="categIn">
     		<div class="myinfo2">
 	    			<a href="<?php bloginfo('wpurl')?>"><img id="avt" src="<?php bloginfo('template_url')?>/images/avt.jpg"></a>
